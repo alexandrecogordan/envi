@@ -1,51 +1,51 @@
-Name,Image Link,Origin,Price,Unit Price
-Vrai Yaourt Nature Bio 4X125G,,,"1,62 €","(3,24 € / kilo)"
-L'Œuf de Nos Villages Œufs frais Bio x10,,,"5,99 €","(0,60 € / article)"
-Lactel BIO demi-écrémé bouteille 6x1L,,,"8,82 €","(1,47 € / litre)"
-Casino Bio Mozza Bufala Aop 125G Cobio,,,,
-Casino Bio Pétales aux lentilles - Biscuits apéritifs - Nature - Biologique - 60g,,,,
-Casino Bio Jus D'Orange - 100% Pur Jus - Biologique - 1L,,,,
-Vrai Yaourt au lait de brebis nature Bio 2x125g,,,"1,93 €","(7,72 € / kilo)"
-Vrai Fromage Blanc Nature 36% de Matière Grasse Bio 500g,,,"2,84 €","(5,68 € / kilo)"
-Vrai Yaourt au lait de chèvre nature bio 2x125g,,,"1,87 €","(7,48 € / kilo)"
-Max Havelaar Banane Bio x5,,Pays d’origine Équateur,"1,99 €","(0,40 € / article)"
-Casino Bio Œufs - Moyen - Biologique - x10,,,"4,43 €","(0,44 € / article)"
-Concombre Bio 1 unité,,Pays d’origine Espagne,"1,99 €","(1,99 € / article)"
-Casino Bio Tomates concassées - En dés - Biologique - 400g,,,"0,99 €","(2,48 € / kilo)"
-Bouquet Bio Tomates cerise Bio 250g,,Pays d’origine Italie,"2,99 €","(11,96 € / kilo)"
-Casino Banane Bio Max Havelaar 5 fruits C2,,Pays d’origine République dominicaine,"2,69 €","(3,84 € / kilo)"
-Casino Bio Lait - Demi-écrémé - Biologique - 6x1l,,,"7,14 €","(1,19 € / litre)"
-Casino Bio Galettes de blé noir - x4 - Biologique - 200g,,,"2,24 €","(10,98 € / kilo)"
-Casino Bio Œufs - Moyen - Biologique - x6,,,"2,85 €","(0,48 € / article)"
-Bio Pomme bicolore x4,,Pays d’origine France,"2,99 €","(0,75 € / article)"
-Lotus Coton Tige Bio Sachet X160,,,"1,01 €","(1,01 € / article)"
-Ail Blanc Bio 3 têtes,,Pays d’origine Espagne,"2,99 €","(1,00 € / article)"
-Bjorg Lait d'amande sans sucres bio 1L,,,"2,17 €","(2,17 € / litre)"
-C'Est Qui Le Patron?! Beurre Doux Bio 250G,,,"3,17 €","(12,68 € / kilo)"
-Casino Courgette Bio 1kg,,Pays d’origine France,"5,49 €","(5,49 € / kilo)"
-Casino Bio Maïs croquant bio 1/4 2x150g,,,"1,43 €","(5,11 € / kilo)"
-Casino Bio Riz basmati - Biologique - 500g,,,"1,49 €","(2,98 € / kilo)"
-La Boulangère Pain de mie complet Bio 500g,,,"2,60 €","(5,20 € / kilo)"
-Casino Bio Pâte brisée - Pur beurre - Biologique - 230g,,,"1,47 €","(6,39 € / kilo)"
-Bjorg Boisson Avoine Bio 1L,,,"2,33 €","(2,33 € / litre)"
-Casino Bio Farine de blé - Biologique - 1kg,,,"1,66 €","(1,66 € / kilo)"
-Casino Bio Jus De Pomme - 100% Pur Jus - Biologique - 1L,,,"1,79 €","(1,79 € / litre)"
-Casino Bio Pomme Bicolore 4 Fruits C2,,Pays d’origine France,"3,49 €","(2,68 € / kilo)"
-Bjorg Boisson soja nature sans sucres bio 1L,,,"1,96 €","(1,96 € / litre)"
-Casino Bio Haricots verts - Très fins - Biologique - 600g,,,"1,75 €","(2,92 € / kilo)"
-"Pomme Juliette Bio X4, Catégorie 2",,Pays d’origine France,"3,49 €","(0,87 € / article)"
-Casino Bio Yaourt nature - 0% m.g. - Biologique - 4 pots - 4x125g,,,"0,99 €","(1,98 € / kilo)"
-Casino Bio Boisson - Avoine - Brique - Biologique - 1l,,,"1,97 €","(1,97 € / litre)"
-Les 2 vaches Yaourt vanille brassé bio 4x115 g,,,"2,44 €","(5,30 € / kilo)"
-Loué Oeuf Fermier Gros Bio Boîte X6,,,"4,56 €","(0,76 € / article)"
-"Pomme de Terre Ile de Batz Bio 1,5kg",,Pays d’origine France,"5,99 €","(3,99 € / kilo)"
-Casino Bio Boisson au soja - Nature - Biologique - 1l,,,"0,99 €","(0,99 € / litre)"
-Casino Bio Yaourt Nature - 12 Pots - Biologique - 12X125G,,,"3,64 €","(2,43 € / kilo)"
-Casino Bio Pâte feuilletée - Pur beurre  230g,,,"2,48 €","(10,78 € / kilo)"
-Casino Bio Oignon Jaune 500g C2,,Pays d’origine France,"2,79 €","(5,58 € / kilo)"
-Jardin Bio Double concentré de Tomate Bio 140g,,,"1,20 €","(8,57 € / kilo)"
-Lait Demi-Écrémé Bio 1 Litre Lactel,,,"1,89 €","(1,89 € / litre)"
-Casino Bio œufs frais x6,,,"3,09 €","(0,52 € / article)"
-Casino Bio 2 Steacks Hâchés 5% MG Bio 2x125g,,Pays d’origine France,"6,59 €","(26,36 € / kilo)"
-Bjorg Biscuits Fourrés Au Chocolat Noir Bio 225g,,,"2,78 €","(12,36 € / kilo)"
-L'œuf de nos Villages Œufs Frais Bio x6,,,"3,74 €","(0,62 € / article)"
+Name,Image Link,Origin,Price,Unit Price,Bio
+Maître Prunille Amandes Décortiquées 250g,,,"5,49 €","(21,96 € / kilo)",False
+Maitre Prunille Amandes Grillées sans Sel 400g,,,"7,59 €","(18,98 € / kilo)",False
+Maître Prunille Amandes grillées sans sel 250g,,Pays d’origine France,"4,49 €","(17,96 € / kilo)",False
+Maître Prunille Amandes Poudre 200g,,,"4,69 €","(23,45 € / kilo)",False
+Maître Prunille Amandes Émondées 250g,,,"5,65 €","(22,60 € / kilo)",False
+Seeberger Amandes 500g,,Pays d’origine Australie,"12,69 €","(25,38 € / kilo)",False
+Max Havelaar Banane Bio x5,,Pays d’origine Équateur,"1,99 €","(0,40 € / article)",True
+Avocat mûr à point x4,,Pays d’origine Mexique,"3,99 €","(1,00 € / article)",False
+Cœur de Sucrine x3 pièces,,Pays d’origine France,"0,99 €","(0,33 € / article)",False
+Courgette filet de 1kg,,Pays d’origine Espagne,"1,99 €","(1,99 € / kilo)",False
+Endives en sachet x 5,,Pays d’origine France,"2,29 €","(0,46 € / article)",False
+"Pomme de terre 1,5kg",,Pays d’origine France,"1,00 €","(0,67 € / kilo)",False
+Bananes 5 fruits C2,,Pays d’origine Côte d'Ivoire,"0,99 €","(1,65 € / kilo)",False
+Champignon blanc petit prix 200g,,Pays d’origine France,"0,99 €","(4,95 € / kilo)",False
+Concombre Bio 1 unité,,Pays d’origine Espagne,"1,99 €","(1,99 € / article)",True
+Natoora Poire Conférence Catégorie I,,Pays d’origine France,"2,99 €","(5,98 € / kilo)",False
+Oignon Jaune Gros Calibre 1kg,,Pays d’origine France,"2,49 €","(2,49 € / kilo)",False
+Pomme De Terre Princesse Amandine C1 2kg,,Pays d’origine France,"4,99 €","(2,50 € / kilo)",False
+"Carotte 1,5 kg",,Pays d’origine France,"2,59 €","(1,73 € / kilo)",False
+"Natoora Tomate Ronde Pleine Terre, Catégorie 1, 500g",,Pays d’origine Italie,"4,49 €","(8,98 € / kilo)",False
+Oignon jaune 500g,,Pays d’origine France,"2,00 €","(4,00 € / kilo)",False
+Bouquet Bio Tomates cerise Bio 250g,,Pays d’origine Italie,"2,99 €","(11,96 € / kilo)",True
+Pomme de Terre Grenaille 500g,,Pays d’origine France,"2,95 €","(5,90 € / kilo)",False
+Casino Banane Bio Max Havelaar 5 fruits C2,,Pays d’origine République dominicaine,"2,69 €","(3,84 € / kilo)",True
+Bio Pomme bicolore x4,,Pays d’origine France,"2,99 €","(0,75 € / article)",True
+"Pomme Bicolore Jonagored Catégorie 1, 1,5Kg",,Pays d’origine France,"3,99 €","(2,66 € / kilo)",False
+Natoora Mélange de Citrons 3 pièces,,Pays d’origine France,"2,75 €","(5,50 € / kilo)",False
+Blanc de poireau 500g,,Pays d’origine France,"3,99 €","(7,98 € / kilo)",False
+Ail Blanc Bio 3 têtes,,Pays d’origine Espagne,"2,99 €","(1,00 € / article)",True
+Natoora Courgettes Vertes Longues 500g,,Pays d’origine France,"2,89 €","(5,78 € / kilo)",False
+Natoora Concombre lisse,,Pays d’origine Espagne,"1,95 €","(1,95 € / article)",False
+Casino Courgette Bio 1kg,,Pays d’origine France,"5,49 €","(5,49 € / kilo)",True
+Patate Douce 1kg,,Pays d’origine États-Unis,"3,69 €","(3,69 € / kilo)",False
+"Florette coeur de laitue, format familial 320g",,,"2,70 €","(8,44 € / kilo)",False
+Haricot vert fin barquette 250g,,,"2,99 €","(11,96 € / kilo)",False
+"Pomme De Terre Rouge Filet 2,5Kg",,Pays d’origine France,"5,49 €","(2,20 € / kilo)",False
+"Betterave Sous-Vide Catégorie1, 500g",,Pays d’origine France,"0,99 €","(1,98 € / kilo)",False
+Poivron Tricolore 500G Catégorie 1,,Pays d’origine Espagne,"2,99 €","(5,98 € / kilo)",False
+Natoora Raisin Muscat 250g,,Pays d’origine France,"3,99 €","(15,96 € / kilo)",False
+Banane petit prix 4x,,Pays d’origine République dominicaine,"1,70 €","(0,43 € / article)",False
+Potimarron Bio X1,,Pays d’origine France,"2,99 €","(2,99 € / article)",True
+Florette laitue iceberg 175g,,Pays d’origine France,"1,80 €","(10,29 € / kilo)",False
+Bio Brocoli 500G,,Pays d’origine Espagne,"3,99 €","(3,99 € / article)",True
+Natoora Carotte Sable 600g,,Pays d’origine France,"1,99 €","(3,32 € / kilo)",False
+Casino Bio Pomme Bicolore 4 Fruits C2,,Pays d’origine France,"3,49 €","(2,68 € / kilo)",True
+"Pomme Juliette Bio X4, Catégorie 2",,Pays d’origine France,"3,49 €","(0,87 € / article)",True
+Casino Mâche 125g,,Pays d’origine France,"1,65 €","(13,20 € / kilo)",False
+Natoora Poireaux Nouveaux 500g,,Pays d’origine France,"2,95 €","(5,90 € / kilo)",False
+Natoora Aubergine Noire Catégorie 1,,Pays d’origine Italie,"2,75 €","(8,09 € / kilo)",False
+"Pomme de Terre Ile de Batz Bio 1,5kg",,Pays d’origine France,"5,99 €","(3,99 € / kilo)",True
