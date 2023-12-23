@@ -1,7 +1,20 @@
 import requests, json
 import pandas as pd
 
+api_key = 'YOUR_API_KEY'
+headers = {'Authorization': f'Bearer {api_key}'}
+
 url = "https://fr.openfoodfacts.org/cgi/search.pl"
+
+# Make a GET request
+response = requests.get(api_endpoint, headers=headers)
+
+# Process the response
+if response.status_code == 200:
+    data = response.json()
+    # Do something with the data
+else:
+    print(f"Error: {response.status_code} - {response.text}")
 
 products_info = requests.get(url)
 data = json.loads(products_info.text)
@@ -20,3 +33,8 @@ df = pd.DataFrame(df_data, columns=['name', 'price', 'origin', 'nutriscore', 'im
 
 print('Source: Open Food Facts')
 
+
+# The product the user will type / scan
+
+user_input = 3017624010701 # Gotten from the barcode scanner
+product = "https://world.openfoodfacts.net/api/v2/product/" + user_input + ".json"
