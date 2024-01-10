@@ -1,0 +1,49 @@
+/* styles.css or itemDetails.css */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.item-details-container {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+.logo-small {
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+    margin-top: 20px; /* Increase the space between columns */
+}
+
+.column {
+    width: 45%;
+}
+
+.column h2 {
+    font-size: 20px;
+}
+
+#itemName {
+    font-size: 24px;
+}
+
+#itemImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#itemDescription {
+    margin-top: 15px;
+}
+
+/* Rest of your existing styles... */
