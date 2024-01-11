@@ -14,7 +14,7 @@ body {
 }
 
 .logo-small {
-    max-width: 80px;
+    max-width: 200px;
     margin-bottom: 10px;
 }
 
@@ -28,22 +28,22 @@ body {
     width: 45%;
 }
 
-.column h2 {
-    font-size: 20px;
+.column h1 {
+    font-size: 30px;
+    font-weight: normal;
 }
 
-#itemName {
-    font-size: 24px;
+.column h2 {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 #itemImage {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 #itemDescription {
     margin-top: 15px;
 }
-
-/* Rest of your existing styles... */

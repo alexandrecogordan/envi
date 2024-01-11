@@ -69,3 +69,15 @@ body {
     height: auto;
     border-radius: 8px; /* Add some border radius for a rounded appearance */
 }
+
+button .fa-solid{
+    width: auto;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button {
+    background: transparent;
+    border: none;
+    outline: none;
+}
