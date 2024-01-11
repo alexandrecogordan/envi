@@ -11,17 +11,13 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
-    <div class="container">
-        <img src="resources/envi.png" alt="Envi" class="logo">
-        <form id="searchForm">
-            <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Nom ou lien du produit">
-                <datalist id="suggestions"></datalist>
-            </div>
-        </form>
-        <ul id="resultList"></ul>
+    <div class="item-details-container">
+        <a href="index.html">
+            <img src="resources/envi.png" alt="Envi" class="logo-small">
+        </a>
+        
+        <ul id="productDescription"></ul>
     </div>
-
-    <script src="script.js"></script>
+    <script src="item-script.js"></script>
 </body>
 </html>

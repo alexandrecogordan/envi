@@ -56,8 +56,8 @@ body {
     list-style: none;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: center; /* Center items horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 #resultList li {
@@ -67,7 +67,7 @@ body {
 #resultList img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px; /* Add some border radius for a rounded appearance */
+    border-radius: 8px;
 }
 
 button .fa-solid{
@@ -80,4 +80,15 @@ button {
     background: transparent;
     border: none;
     outline: none;
+}
+
+.list-text {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
