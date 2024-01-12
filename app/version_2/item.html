@@ -12,13 +12,22 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
-    <div class="item-details-container">
+    <div class="item-container">
         <a href="index.html">
             <img src="resources/envi.png" alt="Envi" class="logo-small">
         </a>
-        
-        <ul id="productDescription"></ul>        
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <ul id="productDescription"></ul>     
+            </div>
+            <div class="flex-item">
+                <h3>More Information</h3>
+                <p>This is more information about the product...</p>
+            </div>
+        </div>
     </div>
+    
     <script src="item-script.js"></script>
 </body>
 </html>
