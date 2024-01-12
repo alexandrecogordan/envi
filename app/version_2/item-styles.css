@@ -3,14 +3,19 @@
 body {
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .item-details-container {
     text-align: center;
-    margin-top: 20px;
     color: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
+    width: 90%; /* You can set this to the max width you want */
+    max-width: 600px; /* Or whatever max-width you want */
 }
 
 .logo-small {
@@ -46,4 +51,11 @@ body {
 
 #itemDescription {
     margin-top: 15px;
+}
+
+#productDescription {
+    padding: 0; /* Removes padding */
+    list-style-type: none; /* Removes bullet points */
+    width: 100%; /* Ensures the ul spans the full width of its container */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }
