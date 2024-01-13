@@ -61,32 +61,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 productFootprint.append(`<h1>Categorie: <br></h1><h2>${product.category}</h2>`);
 
+                var current_percentage = (product.agriculture / product.carbon_footprint).toFixed(1) * 100;
+
                 productFootprint.append(`
                 <div class="progress-container">
                     <div class="progress-name"><strong>🌾 Agriculture</strong></div>
                     <div class="progress-bar">
-                        <div class="progress-percentage" percentage="70%" style="max-width:70%"></div>
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
+                    </div>
+                </div>
+                `);
+                
+                current_percentage = (product.transformation / product.carbon_footprint).toFixed(1) * 100;
+
+                productFootprint.append(`
+                <div class="progress-container">
+                    <div class="progress-name"><strong>🏭 Transformation</strong></div>
+                    <div class="progress-bar">
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
                     </div>
                 </div>
                 `);
 
-                // productFootprint.append(`<p><strong>Transformation:</strong></p>`);
+                current_percentage = (product.packaging / product.carbon_footprint).toFixed(1) * 100;
 
-                // productFootprint.append(`<div class="progress-container"><p class="progress-bar" style="width:${(product.transformation / product.carbon_footprint).toFixed(1) * 100}%;"><i class="fa-solid fa-leaf"></i><span class="progress-text">${(product.transformation / product.carbon_footprint).toFixed(1)}% (${product.transformation.toFixed(1)}kg)</span></p></div>`);
+                productFootprint.append(`
+                <div class="progress-container">
+                    <div class="progress-name"><strong>📦 Emballage</strong></div>
+                    <div class="progress-bar">
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
+                    </div>
+                </div>
+                `);
 
-                productFootprint.append(`<p><strong>🏭 Transformation:</strong> ${(product.transformation / product.carbon_footprint).toFixed(1)}% (${product.transformation.toFixed(1)}kg)</p>`);
+                current_percentage = (product.transport / product.carbon_footprint).toFixed(1) * 100;
 
-                // productFootprint.append(`<p><strong>Emballage:</strong></p>`);
+                productFootprint.append(`
+                <div class="progress-container">
+                    <div class="progress-name"><strong>🚚 Transport</strong></div>
+                    <div class="progress-bar">
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
+                    </div>
+                </div>
+                `);
 
-                productFootprint.append(`<p><strong>📦 Emballage:</strong> ${(product.packaging / product.carbon_footprint).toFixed(1)}% (${product.packaging}kg)</p>`);
+                current_percentage = (product.distribution / product.carbon_footprint).toFixed(1) * 100;
+                
+                productFootprint.append(`
+                <div class="progress-container">
+                    <div class="progress-name"><strong>🏬 Distribution</strong></div>
+                    <div class="progress-bar">
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
+                    </div>
+                </div>
+                `);
 
-                productFootprint.append(`<p><strong>🚚 Transport:</strong> ${(product.transport / product.carbon_footprint).toFixed(1)}% (${product.transport.toFixed(1)}kg)</p>`);
+                current_percentage = (product.consommation / product.carbon_footprint).toFixed(1) * 100;
 
-                productFootprint.append(`<p><strong>🏬 Distribution:</strong> ${(product.distribution / product.carbon_footprint).toFixed(1)}% (${product.distribution.toFixed(1)}kg)</p>`);
+                productFootprint.append(`
+                <div class="progress-container">
+                    <div class="progress-name"><strong>🍽️ Consommation</strong></div>
+                    <div class="progress-bar">
+                        <div class="progress-percentage" percentage="${current_percentage}%" style="max-width:${current_percentage}%"></div>
+                    </div>
+                </div>
+                `);
 
-                productFootprint.append(`<p><strong>🍽️ Consommation:</strong> ${(product.consommation / product.carbon_footprint).toFixed(1)}% (${product.consommation.toFixed(1)}kg)</p>`);
-
-                productFootprint.append(`<p><strong>🌍 Carbon Footprint:</strong> ${parseFloat(product.carbon_footprint).toFixed(2)}kg</p>`);
+                productFootprint.append(`<h3><strong>🌍 Carbon Footprint:</strong><br> <strong>${parseFloat(product.carbon_footprint).toFixed(2)}kg</strong> CO2 eq/kg de produit</h3>`);
             } else {
                 productDetails.append('<p>Product not found</p>');
             }

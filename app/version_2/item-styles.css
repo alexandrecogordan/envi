@@ -24,14 +24,13 @@ body {
 
 .flex-container {
     display: flex;
-
     text-align: center;
     color: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     width: 90%;
     max-width: 600px;
-    padding-right: 25%;
+    /* padding-right: 25%; */
 }
 
 .flex-item:nth-child(1) {
@@ -48,7 +47,7 @@ body {
     display: flex;
     text-align: left;
     padding-right: 30px;
-    flex: 0 0 80%;
+    flex: 0 0 50%;
 }
 
 .flex-item:nth-child(2) h1 {
@@ -61,7 +60,15 @@ body {
 .flex-item:nth-child(2) h2 {
     font-size: 20px;
     font-weight: lighter;
-    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.flex-item:nth-child(2) h3 {
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: lighter;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -81,31 +88,37 @@ body {
 } */
 
 .progress-bar {
-    margin-top: 5px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     background-color: rgb(107, 199, 107);
     border-radius: 5px;
     height: auto;
 }
 
 .progress-percentage {
-    height: 10px;
+    height: 20px;
     background: green;
     border-radius: 5px;
     position: relative;
-    animation: fillBars 1.5s ease-in-out;
+    animation: fillBars 2.5s ease-in-out;
     color: white;
 }
 
 .progress-percentage::before {
     content: attr(percentage);
     position: absolute;
-    padding: 4px 6px;
+    padding: 2.7px 6px;
     background: green;
     border-radius: 5px;
     font-size: 12px;
-    top: -28px;
+    top: 0px;
     right: 0;
     transform: translateX(50%);
+    display: none;
+}
+
+.progress-percentage:not([percentage="0%"])::before {
+    display: block;
 }
 
 .progress-percentage::after {
@@ -114,7 +127,7 @@ body {
     /* width: 10px;
     height: 10px; */
     background: green;
-    top: -20px;
+    top: -0px;
     right: 0;
     transform: translateX(50%) rotate(45deg);
     border-radius: 5px;
