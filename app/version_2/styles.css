@@ -92,3 +92,8 @@ button {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+
+.item-image {
+    width: 150px;
+    height: 150px;
+}

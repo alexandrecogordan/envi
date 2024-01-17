@@ -260,3 +260,15 @@ body {
 .link:hover {
     text-decoration: underline;
 }
+
+.star-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star {
+    font-size: 20px;
+    color: gold;
+    padding-right: 4px;
+}  

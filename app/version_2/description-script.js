@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         var country = document.querySelector("#" + countryCode);
                         if (country) {
                             country.style.fill = '#B71A1A';
+                            // country.style.fill = product.transport_color;
                         }
                     });
                 };

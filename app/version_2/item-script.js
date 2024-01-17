@@ -20,12 +20,41 @@ document.addEventListener("DOMContentLoaded", function () {
                 productDetails.append(`<p><strong>🏣 Magasin:</strong> Carrefour</p>`);
                 productDetails.append(`<p><strong>⛰️ Origine:</strong> ${product.origin}</p>`);
                 
+                if (product.rank) {
+                    productDetails.append(`<div class="star-rating">`);
+
+                    for (let i = 0; i < product.rank; i++) {
+                        productDetails.append(`<a class="star">&#9733;</a>`);
+                    }
+
+                    productDetails.append(`</div>`);
+                }
+
                 if (!product.unit_price) {
                     product.unit_price = "";
                 }
                 productDetails.append(`<p><strong>💸 Prix:</strong> ${product.price} € (${product.unit_price}) </p>`);
 
-                productDetails.append(`<p><strong>🚚 Distance:</strong> ${product.distance} km</p>`);
+                var distance_colour = "";
+
+                switch(product.transport_color) {
+                    case 'green':
+                        distance_colour = "🟢";
+                        break;
+                    case 'orange':
+                        distance_colour = "🟠";
+                        break;
+                    case 'yellow':
+                        distance_colour = "🟡";
+                        break;
+                    case 'red':
+                        distance_colour = "🔴";
+                        break;
+                    default:
+                        break;
+                }
+
+                productDetails.append(`<p><strong>🚚 Distance:</strong> ${product.distance} km ${distance_colour}</p>`);
 
                 if (product.bio) {
                     product.bio = "Oui";

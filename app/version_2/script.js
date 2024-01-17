@@ -23,13 +23,16 @@ document.addEventListener("DOMContentLoaded", function () {
             if (event.which === 13) {
                 event.preventDefault();
                 
-                var direct_link = $(this).val();
+                var input_value = $(this).val();
+                var link = data.find(found_item => found_item.link === input_value);
+                var search = data.find(found_item => found_item.link === input_value);
 
-                var item = data.find(item => item.link === direct_link);
-
-                console.log(item)
-
-                navigateToItemDetails(item);
+                if (link) {
+                    navigateToItemDetails(link);
+                }
+                if(search){
+                    // Do the thing to show the values in a search manner.
+                }
             }
         });
     });
@@ -43,11 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
         filteredData.forEach(item => {
             var listItem = $('<li>');
             var link = $('<a>').attr('href', `item.html?name=${encodeURIComponent(item.product_name)}`);
-            var image = $('<img>').attr('src', item.image).attr('alt', item.vegetable_name);
-            var direct_link = 'https://www.carrefour.fr/p/avocats-bio-hass-3523680411289'
+            var image = $('<img>').attr('src', item.image).attr('alt', item.vegetable_name).addClass('item-image'); // Add CSS class 'item-image' to the image element
             
-            var truncatedText = item.product_name.length > 20 
-            ? item.product_name.substring(0, 30) + '...'
+            var truncatedText = item.product_name.length > 25 
+            ? item.product_name.substring(0, 25) + '...'
             : item.product_name;
 
             var name = $('<p>').text(truncatedText).addClass('list-text');
@@ -64,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function navigateToItemDetails(item) {
-        const detailsUrl = `itemDetails.html?name=${encodeURIComponent(item.Nom)}&image=${encodeURIComponent(item.Image)}&origine=${encodeURIComponent(item.Origine)}&price=${encodeURIComponent(item.Prix)}&unitPrice=${encodeURIComponent(item.PrixUnite)}&productLink=${encodeURIComponent(item.Lien)}&vegetableName=${encodeURIComponent(item.Nom_legume)}&distance=${encodeURIComponent(item.Distance)}&agriculture=${encodeURIComponent(item.Agriculture)}&transformation=${encodeURIComponent(item.Transformation)}&emballage=${encodeURIComponent(item.Emballage)}&transport=${encodeURIComponent(item.Transport)}&distribution=${encodeURIComponent(item.Distribution)}&consommation=${encodeURIComponent(item.Consommation)}&carbonfootprint=${encodeURIComponent(item.CarbonFootprint)}`;
+        const detailsUrl = `item.html?name=${encodeURIComponent(item.product_name)}`
 
         window.location.href = detailsUrl;
     }
