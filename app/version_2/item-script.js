@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
                 productDetails.append(`<p><strong>🌱 Bio:</strong> ${product.bio}</p>`);
 
+                productDetails.append(`<a href="${product.link}" target="_blank" class="link"><strong>🔗 Lien du produit</strong></a>`);
+
                 // Product Footprint
 
                 productFootprint.append(`<h1>Catégorie: <br></h1><h2>${product.category}</h2>`);
