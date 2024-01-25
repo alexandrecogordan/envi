@@ -1,0 +1,41 @@
+<!-- itemDetails.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Details</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your stylesheet -->
+    <link rel="stylesheet" href="itemDetails.css"> <!-- Include your stylesheet -->
+</head>
+<body>
+    <div class="item-details-container">
+        <a href="index.html"> <!-- Wrap the Envi logo with an anchor tag -->
+            <img src="resources/envi.png" alt="Envi" class="logo-small"> <!-- New smaller logo -->
+        </a>
+        
+        <h1 id="itemVegetableName"></h1>
+
+        <div class="columns-container">
+            <div class="column">
+                <h1>Votre produit</h1>
+                <h2 id="itemName"></h2>
+                <img id="itemImage" alt="Item Image">
+                <h2 id="itemName"></h2>
+                <p><strong>🏣 Magasin:</strong> Carrefour</p>
+                <p><strong>⛰️ Origine:</strong> <span id="itemOrigine"></span></p>
+                <p><strong>💸 Prix:</strong> <span id="itemPrice"></span> </p>
+                <p><strong>🚚 Distance:</strong> <span id="itemDistance"></span> </p>
+                <p><strong>🚚 Empreinte Carbone:</strong> <span id="itemCarbonFootprint"></span></p>
+                <p><strong>🔗 Lien vers le produit:</strong> <a id="itemProductLink" href="#" target="_blank">Lien</a></p>
+            </div>
+
+            <div class="column">
+                <h1>Son impact</h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="itemDetails.js"></script> <!-- Include the JavaScript file for itemDetails page -->
+</body>
+</html>
