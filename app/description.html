@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="description-styles.css">
 
     <script src="https://kit.fontawesome.com/fde3a0be6c.js" crossorigin="anonymous"></script>
-    
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -20,6 +19,13 @@
          <img src="resources/envi-negative.png" alt="Envi" class="logo-small">
       </a>
    </div>
+
+   <!--
+   This is a map container with a world map displayed using SVG.
+   It is composed of various XML namespaces and attributes.
+   The mapsvg:geoViewBox attribute specifies the geographic view box of the map.
+   We have width and height attributes that define the dimensions of the SVG element.
+   -->
 
    <div class="map-container">
       <div class="world-map">
@@ -33,6 +39,8 @@
             width="1009.6727"
             height="665.96301">
          
+         <!-- The following paths allow us to get the boundaries of coutries so that we can fill them (in order to highlight them) in the page's map  -->
+
          <path
             d="m 479.68275,331.6274 -0.077,0.025 -0.258,0.155 -0.147,0.054 -0.134,0.027 -0.105,-0.011 -0.058,-0.091 0.006,-0.139 -0.024,-0.124 -0.02,-0.067 0.038,-0.181 0.086,-0.097 0.119,-0.08 0.188,0.029 0.398,0.116 0.083,0.109 10e-4,0.072 -0.073,0.119 z"
             title="Andorra"

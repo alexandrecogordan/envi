@@ -1,61 +1,73 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const searchForm = document.getElementById('searchForm');
-    const searchInput = document.getElementById('searchInput');
+document.addEventListener("DOMContentLoaded", function () {
+    var data = [];
+    var suggestionsSet = new Set();
 
-    searchForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        performSearch();
+    // Fetch JSON data and populate the 'data' array
+    $.getJSON("./resources/vegetables.json", function(result) {
+        $.each(result, function(index, table) {
+            data.push(table);
+            suggestionsSet.add(table.vegetable_name);
+        });
+
+        var suggestions = Array.from(suggestionsSet);
+
+        $( "#searchInput" ).autocomplete({
+            source: suggestions,
+            select: function(event, ui) {
+                event.preventDefault();
+                displayIndexResult(ui.item.value);
+            }
+        });
+
+        $('#searchInput').on('keypress', function (event) {
+            if (event.which === 13) {
+                event.preventDefault();
+                
+                var input_value = $(this).val();
+                var link = data.find(found_item => found_item.link === input_value);
+                var search = data.find(found_item => found_item.link === input_value);
+
+                if (link) {
+                    navigateToItemDetails(link);
+                }
+                if(search){
+                    // Do the thing to show the values in a search manner.
+                }
+            }
+        });
     });
 
-    function performSearch() {
-        const searchTerm = searchInput.value.trim().toLowerCase();
-        if (searchTerm !== '') {
-            Papa.parse('resources/vegetables.csv', {
-                download: true,
-                header: true,
-                complete: function (result) {
-                    const data = result.data;
+    function displayIndexResult(vegetableName) {
+        var resultList = $('#resultList');
+        resultList.empty();
 
-                    const matchingItems = data.filter(item => {
-                        const itemName = (item.Nom || '').toLowerCase();
-                        const itemVegetableName = (item.nom_legume || '').toLowerCase();
-                        return itemName.includes(searchTerm);
-                    });
+        var filteredData = data.filter(item => item.vegetable_name === vegetableName);
 
-                    displayMatchingImages(matchingItems);
-                }
+        filteredData.forEach(item => {
+            var listItem = $('<li>');
+            var link = $('<a>').attr('href', `item.html?name=${encodeURIComponent(item.product_name)}`);
+            var image = $('<img>').attr('src', item.image).attr('alt', item.vegetable_name).addClass('item-image'); // Add CSS class 'item-image' to the image element
+            
+            var truncatedText = item.product_name.length > 25 
+            ? item.product_name.substring(0, 25) + '...'
+            : item.product_name;
+
+            var name = $('<p>').text(truncatedText).addClass('list-text');
+
+            listItem.on('click', function () {
+                navigateToItemDetails(item);
             });
-        }
-    }
-
-    function displayMatchingImages(matchingItems) {
-        const resultList = document.getElementById('resultList');
-        resultList.innerHTML = '';
-
-        if (matchingItems.length > 0) {
-            matchingItems.forEach(item => {
-                const listItem = document.createElement('li');
-                const image = document.createElement('img');
-                image.src = item.Image || '';
-                image.alt = item.Nom || '';
-
-                listItem.addEventListener('click', function () {
-                    navigateToItemDetails(item);
-                });
-
-                listItem.appendChild(image);
-                resultList.appendChild(listItem);
-            });
-        } else {
-            alert('No matching items found.');
-        }
+            
+            link.append(image);
+            listItem.append(link);
+            listItem.append(name);
+            resultList.append(listItem);
+        });
     }
 
     function navigateToItemDetails(item) {
-        // Construct the URL for the itemDetails.html page with parameters
-        const detailsUrl = `itemDetails.html?name=${encodeURIComponent(item.Nom)}&image=${encodeURIComponent(item.Image)}&origine=${encodeURIComponent(item.Origine)}&price=${encodeURIComponent(item.Prix)}&unitPrice=${encodeURIComponent(item.PrixUnite)}&productLink=${encodeURIComponent(item.Lien)}&vegetableName=${encodeURIComponent(item.Nom_legume)}&distance=${encodeURIComponent(item.Distance)}&agriculture=${encodeURIComponent(item.Agriculture)}&transformation=${encodeURIComponent(item.Transformation)}&emballage=${encodeURIComponent(item.Emballage)}&transport=${encodeURIComponent(item.Transport)}&distribution=${encodeURIComponent(item.Distribution)}&consommation=${encodeURIComponent(item.Consommation)}&carbonfootprint=${encodeURIComponent(item.CarbonFootprint)}`;
+        const detailsUrl = `item.html?name=${encodeURIComponent(item.product_name)}`
 
-        // Navigate to the new page
         window.location.href = detailsUrl;
     }
 });
